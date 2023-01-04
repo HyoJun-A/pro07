@@ -1,0 +1,5 @@
+package kr.go.unikr.controller;
+
+public class BoardController {
+
+}

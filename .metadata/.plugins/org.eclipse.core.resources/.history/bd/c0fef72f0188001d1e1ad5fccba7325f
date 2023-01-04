@@ -1,0 +1,12 @@
+package kr.go.unikr.DTO;
+
+import lombok.Data;
+
+@Data
+public class BoardDTO {
+	bno int primary key auto_increment comment 'PK',
+    title varchar(200) not null comment '공지사항 제목',
+    content varchar(1000) not null comment '내용',
+    credate datetime default now() comment '작성일',
+    visited int default 0 comment '읽은 횟수'
+}

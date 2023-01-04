@@ -1,0 +1,13 @@
+package kr.go.unikr.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import kr.go.unikr.model.BoardRepository;
+
+@Service
+public class BoardServiceImpl implements BoardService {
+	@Autowired
+	BoardRepository boardRepository;
+
+}
