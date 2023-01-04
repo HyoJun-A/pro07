@@ -38,6 +38,12 @@ public class BoardServiceImpl implements BoardService {
 	public void boardEdit(BoardDTO dto) throws Exception {
 		boardRepository.boardEdit(dto);
 	}
+
+	@Override
+	public void boardAdd(BoardDTO dto) throws Exception {
+		boardRepository.boardAdd(dto);
+		
+	}
 	
 	
 

@@ -27,4 +27,8 @@
 	<update id="boardEdit">
 		update board set title=#{title}, content=#{content} where bno=#{bno}
 	</update>
+	
+	<insert id="boardAdd">
+		insert into board(title, content) values(#{title}, #{content});
+	</insert>
 </mapper>

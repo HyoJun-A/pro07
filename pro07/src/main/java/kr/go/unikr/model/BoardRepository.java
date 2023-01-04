@@ -10,4 +10,5 @@ public interface BoardRepository {
 	public BoardDTO boardDetail(int bno) throws Exception;
 	public void boardDel(int bno) throws Exception;
 	public void boardEdit(BoardDTO dto) throws Exception;
+	public void boardAdd(BoardDTO dto) throws Exception;
 }

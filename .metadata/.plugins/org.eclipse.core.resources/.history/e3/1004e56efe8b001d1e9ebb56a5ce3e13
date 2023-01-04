@@ -1,0 +1,17 @@
+package kr.go.unikr.DTO;
+
+import lombok.Data;
+
+@Data
+public class QnaDTO {
+	priavte int qno;
+
+	qno int primary key auto_increment comment 'PK',
+    title varchar(200) not null comment '제목',
+    content varchar(1000) not null comment '내용',
+	author varchar(50) not null comment '작성자',
+    credate datetime default now() comment '작성날짜',
+    visited int default 0 comment '읽은 횟수',
+    lev int default 0 comment '0:질문 1: 답변',
+    pos int comment '어떤 글의 답변인지 찾기위해 사용'
+}

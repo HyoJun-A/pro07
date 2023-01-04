@@ -20,7 +20,7 @@ import kr.go.unikr.DTO.UserDTO;
 import kr.go.unikr.service.UserService;
 
 @Controller
-@RequestMapping("/user/")
+@RequestMapping("/user/*")
 public class UserController {
 	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 	

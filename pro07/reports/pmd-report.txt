@@ -1,0 +1,36 @@
+src/main/java/kr/go/unikr/controller/BoardController.java:18:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/unikr/controller/BoardController.java:18:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/unikr/controller/BoardController.java:20:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/unikr/controller/BoardController.java:21:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the boardService field if you want a default access modifier
+src/main/java/kr/go/unikr/controller/BoardController.java:21:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/unikr/controller/BoardController.java:24:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/unikr/controller/BoardController.java:24:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/unikr/controller/BoardController.java:24:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/unikr/controller/BoardController.java:25:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'list' could be declared final
+src/main/java/kr/go/unikr/controller/BoardController.java:31:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/unikr/controller/BoardController.java:31:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'bno' is not assigned and could be declared final
+src/main/java/kr/go/unikr/controller/BoardController.java:31:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/unikr/controller/BoardController.java:31:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/unikr/controller/BoardController.java:33:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dto' could be declared final
+src/main/java/kr/go/unikr/controller/BoardController.java:39:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/unikr/controller/BoardController.java:39:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'bno' is not assigned and could be declared final
+src/main/java/kr/go/unikr/controller/BoardController.java:39:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/unikr/controller/BoardController.java:45:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/unikr/controller/BoardController.java:45:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'bno' is not assigned and could be declared final
+src/main/java/kr/go/unikr/controller/BoardController.java:45:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/unikr/controller/BoardController.java:45:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/unikr/controller/BoardController.java:46:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dto' could be declared final
+src/main/java/kr/go/unikr/controller/BoardController.java:52:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/unikr/controller/BoardController.java:52:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'dto' is not assigned and could be declared final
+src/main/java/kr/go/unikr/controller/BoardController.java:52:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/unikr/controller/BoardController.java:52:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/unikr/controller/BoardController.java:58:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/unikr/controller/SampleController.java:14:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/unikr/controller/SampleController.java:14:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/unikr/controller/SampleController.java:16:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/unikr/controller/SampleController.java:17:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the sampleService field if you want a default access modifier
+src/main/java/kr/go/unikr/controller/SampleController.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/unikr/controller/SampleController.java:20:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/unikr/controller/SampleController.java:20:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/unikr/controller/SampleController.java:20:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/unikr/controller/SampleController.java:21:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'list' could be declared final

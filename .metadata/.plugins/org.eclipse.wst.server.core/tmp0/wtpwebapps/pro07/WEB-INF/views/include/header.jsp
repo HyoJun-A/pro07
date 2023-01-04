@@ -53,6 +53,7 @@
                     <c:if test="${not empty sid }">
                  		<li><a class="dropdown-item" href="#">나의민원</a></li>
                     </c:if>
+                    <li><a class="dropdown-item" href="${path1 }/qna/list.do">민원정책 묻고답하기</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">

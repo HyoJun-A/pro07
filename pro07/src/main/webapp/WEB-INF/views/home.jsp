@@ -10,6 +10,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Main</title>
 	<jsp:include page="include/head.jsp" />
+	<style>
+		        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width: 100%;
+          height: 50%;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          object-fit: cover;
+          background-size: contain;
+        }
+        .simg{
+            background-image: url("resources/img/wrap_bg1.jpg");
+        }
+        .s-title {
+            text-align: left;
+            color: #FEFEFE;
+            padding-left: 2rem;
+            font-weight: 700;
+        }
+        .s-title:after {
+        content: "";
+        display: block;
+        width: 90%;
+        border-bottom: 1px solid #bcbcbc;
+        margin-top: 10%;
+      }
+
+      .eimg{
+        width: 100%;
+      }
+
+      .card-title { text-align: center; font-size: 20px; font-weight: 700;}
+	</style>
 </head>
 <body>
 	<!-- TODO Main -->
@@ -17,51 +86,145 @@
 		<!-- TODO header -->
 		<jsp:include page="include/header.jsp" />
 		<!-- TODO content -->
-		<div class="container px-4 px-lg-5">
-		    <!-- Heading Row-->
-		    <div class="row gx-4 gx-lg-5 align-items-center my-5">
-		        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/900x400/dee2e6/6c757d.jpg" alt="..." /></div>
-		        <div class="col-lg-5">
-		            <h1 class="font-weight-light">Business Name or Tagline</h1>
-		            <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-		            <a class="btn btn-primary" href="#!">Call to Action!</a>
-		        </div>
-		    </div>
-		    <!-- Call to Action-->
-		    <div class="card text-white bg-secondary my-5 py-4 text-center">
-		        <div class="card-body"><p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p></div>
-		    </div>
-		    <!-- Content Row-->
-		    <div class="row gx-4 gx-lg-5">
-		        <div class="col-md-4 mb-5">
-		            <div class="card h-100">
-		                <div class="card-body">
-		                    <h2 class="card-title">Card One</h2>
-		                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-		                </div>
-		                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
-		            </div>
-		        </div>
-		        <div class="col-md-4 mb-5">
-		            <div class="card h-100">
-		                <div class="card-body">
-		                    <h2 class="card-title">Card Two</h2>
-		                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
-		                </div>
-		                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
-		            </div>
-		        </div>
-		        <div class="col-md-4 mb-5">
-		            <div class="card h-100">
-		                <div class="card-body">
-		                    <h2 class="card-title">Card Three</h2>
-		                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-		                </div>
-		                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
-		            </div>
-		        </div>
-		    </div>
-		</div>
+        <div class="container px-4 px-lg-5 nimg">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide simg">
+                    <div class="col-lg-4">
+                        <h2 class="s-title">안녕나의 이웃3<br>탈북민 리얼 취업 성공기</h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <img src="resources/img/s1.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide simg">
+                    <div class="col-lg-4">
+                        <h2 class="s-title">2022 통일로가요<br>수상곡 듣기</h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <img src="resources/img/s2.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide simg">
+                    <div class="col-lg-4">
+                        <h2 class="s-title">「비핵·평화·번영의 한반도」윤석열 정부 통일·대북정책 설명자료 발간</h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <img src="resources/img/s3.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide simg">
+                    <div class="col-lg-4">
+                        <h2 class="s-title">비핵·평화·번영의 한반도를 위한 담대한 구상</h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <img src="resources/img/s4.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide simg">
+                    <div class="col-lg-4">
+                        <h2 class="s-title">소원이가 전하는 할머니, 할아버지 이야기</h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <img src="resources/img/s5.png" alt="">
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        
+        
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                });
+            </script>
+            
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5 nimg">
+                <div class="col-lg-5"><img class="img-fluid rounded mb-4 mb-lg-0"
+                        src="resources/img/C2.png" alt="..." /></div>
+                <div class="col-lg-7">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">공지사항</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>무주택 전후납북피해자 대상 기관추천 특별공급 안내(남양주진접2지구)</td>
+                            <td>2023-01-03</td>
+                          </tr>
+                          <tr>
+                            <td>무주택 전후납북피해자 대상 기관추천 특별공급 안내(인천 주안 더샵 아르테)</td>
+                            <td>2023-01-03</td>
+                          </tr>
+                          <tr>
+                            <td>「인천통일+센터 청년 서포터즈」선발 최종 합격자 공고</td>
+                            <td>2023-01-03</td>
+                          </tr>
+                          <tr>
+                            <td>2023년 통일교육 선도대학 모집 공고문</td>
+                            <td>2023-01-03</td>
+                          </tr>
+                          <tr>
+                            <td>남북교류협력법 시행령 개정 입법예고</td>
+                            <td>2023-01-03</td>
+                          </tr>
+                          <tr>
+                            <td>’23. 1학기「대학생을 위한 통일 특강 및 강좌」선정결과 발표</td>
+                            <td>2023-01-03</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <!-- Content Row-->
+            <div class="row gx-4 gx-lg-5 nimg">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">통일 이야기</h2>
+                            <img src="resources/img/e1.jpg" alt="" class="eimg">
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">통일 이야기</h2>
+                            <img src="resources/img/e2.png" alt="" class="eimg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">알림판</h2>
+                            <img src="resources/img/e3.jpg" alt="" class="eimg">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 		<!-- TODO footer -->
 		<jsp:include page="include/footer.jsp" />
 	</div>

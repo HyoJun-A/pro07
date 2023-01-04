@@ -39,6 +39,12 @@ public class BoardRepositoryImpl implements BoardRepository {
 	public void boardEdit(BoardDTO dto) throws Exception {
 		sqlSession.update("board.boardEdit", dto);
 	}
+
+	@Override
+	public void boardAdd(BoardDTO dto) throws Exception {
+		sqlSession.insert("board.boardAdd", dto);
+		
+	}
 	
 	
 }

@@ -14,7 +14,7 @@ import kr.go.unikr.DTO.BoardDTO;
 import kr.go.unikr.service.BoardService;
 
 @Controller
-@RequestMapping("/board/")
+@RequestMapping("/board/*")
 public class BoardController {
 
 	@Autowired
@@ -57,5 +57,11 @@ public class BoardController {
 	@GetMapping("addForm.do")
 	public String boardForm() {
 		return "board/boardAdd";
+	}
+	
+	@PostMapping("add.do")
+	public String boardAdd(BoardDTO dto, Model model) throws Exception{
+		boardService.boardAdd(dto);
+		return "redirect:list.do";
 	}
 }
