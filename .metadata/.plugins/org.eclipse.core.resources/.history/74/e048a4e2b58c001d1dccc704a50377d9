@@ -1,0 +1,21 @@
+package kr.go.unikr.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import kr.go.unikr.service.CardService;
+
+@Controller
+@RequestMapping("/card/*")
+public class CardController {
+
+	@Autowired
+	CardService cardService;
+	
+	@GetMapping("test")
+	public String test() {
+		return "card/test";
+	}
+}

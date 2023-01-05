@@ -1,0 +1,21 @@
+package kr.go.unikr.service;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class RestService {
+
+	public Map<String, String> getTest4(String id, String pw){
+		Map<String, String> res = new HashMap<>();
+		res.put(id, pw);
+		return res;
+	}
+	
+	public List<String> getTest5(String id){
+		return lst;
+	}
+}

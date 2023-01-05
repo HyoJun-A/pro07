@@ -20,6 +20,7 @@
 	<resources mapping="/user/**" location="/WEB-INF/views/user" />
 	<resources mapping="/board/**" location="/WEB-INF/views/board" />
 	<resources mapping="/qna/**" location="/WEB-INF/views/qna" />
+	<resources mapping="/card/**" location="/WEB-INF/views/card" />
 	
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->

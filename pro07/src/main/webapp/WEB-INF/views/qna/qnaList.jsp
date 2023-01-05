@@ -40,7 +40,7 @@
 		        <c:forEach items="${list }" var="dto" varStatus="status">
 		            <tr>
 		                <td>${status.count }</td>
-		                <td><a href="${path1 }/qna/detail.do?qno=${dto.qno}">${dto.title }</a></td>
+		                <td><a href="${path1 }/qna/detail.do?pos=${dto.pos}">${dto.title }</a></td>
 		                <td>
 							<fmt:parseDate value="${dto.credate }" var="regdate" pattern="yyyy-MM-dd HH:mm:ss" />
 				      		<fmt:formatDate value="${regdate }" pattern="yyyy-MM-dd" />
@@ -50,7 +50,9 @@
 		        </c:forEach>
 		        </tbody>
 		    </table>
-		    <a class="btn btn-outline-success" href="addForm.do">글 작성</a>
+		    <c:if test="${not empty sid }">
+		    	<a class="btn btn-outline-success" href="${path1 }/qna/addForm.do?lev=0">글 작성</a>
+		    </c:if>
 		</div>
 		<div class="fixed-bottom">
 			<jsp:include page="../include/footer.jsp" />

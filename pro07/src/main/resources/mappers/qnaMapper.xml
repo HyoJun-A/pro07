@@ -8,8 +8,39 @@
 		select * from qna where lev = 0
 	</select>
 
-	<!-- 질문 및 답변 상세보기 -->
+	<!-- 질문 및 답변 상세보기(질문 답변 모두 상세보기) -->
 	<select id="qnaDetail" resultType="kr.go.unikr.DTO.QnaDTO">
-		select * from qna where lev = 0 and qno =#{qno}
+		select * from qna where pos =#{pos}
 	</select>
+	
+	<!-- 상세보기 -->
+	<select id="qDetail" resultType="kr.go.unikr.DTO.QnaDTO">
+		select * from qna where qno =#{qno}
+	</select>
+	
+	<!-- 질문 및 답변 수정 -->
+	<insert id="qnaEdit">
+		update qna set title=#{title}, content=#{content} where qno=#{qno}
+	</insert>
+	
+	<!-- 질문 작성 -->
+	<insert id="qAdd">
+		insert into qna(title, content, author, lev, pos) values(#{title}, #{content}, #{author}, #{lev}, (select a.qno+1 from(select max(qno) qno from qna where lev=0)a))
+	</insert>
+	
+	<!-- 답변 작성 -->
+	<insert id="aAdd">
+		insert into qna(title, content, author, lev, pos) values(#{title}, #{content}, #{author}, #{lev}, #{pos})
+	</insert>
+	
+	<!-- 글 삭제 -->
+	<delete id="qnaDel">
+		delete from qna where qno=#{qno}
+	</delete>
+	
+	<!-- 읽은 횟수 증가 -->
+	<update id="visitUp">
+		update qna set visited = visited + 1 where pos = #{pos}
+	</update>
+	
 </mapper>

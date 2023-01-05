@@ -18,7 +18,7 @@
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">통일부 소식</a></li>
                       <li><a class="dropdown-item" href="${path1 }/board/list.do">공지사항</a></li>
-                      <li><a class="dropdown-item" href="#">카드뉴스</a></li>
+                      <li><a class="dropdown-item" href="${path1 }/card/addForm.do">카드뉴스</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -65,6 +65,7 @@
                     </ul>
                 </li>
             </ul>
+            <div class="button-group">
             <c:if test="${empty sid }">
 	            <a type="button" href="${path1 }/user/loginForm.do" class="btn btn-outline-secondary">로그인</a>
 	            <a type="button" href="${path1 }/user/agree.do" class="btn btn-outline-secondary">회원가입</a>
@@ -76,6 +77,7 @@
 	        <c:if test="${sid eq 'admin' }">
 	            <a type="button" href="${path1 }/admin/mgmtForm.do" class="btn btn-outline-secondary">홈페이지 관리</a>
 	        </c:if>
+	        </div>
           </div>
     </div>
 </nav>

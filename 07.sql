@@ -110,3 +110,15 @@ select * from qna;
 select * from qna where lev = 0;
 delete from qna;
 commit;
+update qna set author='admin' where qno = 2;
+
+create table card(
+	cno int primary key auto_increment comment 'PK',
+    title varchar(100) not null comment '카드뉴스 제목',
+    file varchar(500) not null comment '이미지 이름',
+    path varchar(500) not null comment '파일 경로',
+    regdate datetime default now() comment '작성일',
+    visited int default 0 comment '조회수'
+);
+drop table card;
+commit;

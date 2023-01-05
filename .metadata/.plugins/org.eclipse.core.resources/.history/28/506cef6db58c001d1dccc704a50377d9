@@ -1,0 +1,28 @@
+package kr.go.unikr.util;
+
+public class RequestWrapper extends HttpServletRequestWrapper {
+	
+	public RequestWrapper(HttpServletRequest httpServletRequest) {
+		super(httpServletRequest); // super.request = httpServletRequest;
+	}
+	private byte[] bytes = null;
+	public ServletInputStream getInputStream()  throws IOException {
+		if (bytes==null) { // first time
+			InputStream in = super.getInputStream();
+			bytes = new byte[super.getContentLength()];
+			for(int r, offset=0; (r = in.read(bytes,offset,bytes.length-offset))>-1 ; ) { 	
+				offset += r; 
+			}
+		}
+		final InputStream in = new ByteArrayInputStream(bytes);
+		
+		return new ServletInputStream() {			
+			public int read()  throws IOException {
+				return in.read();
+			}
+		};
+	}
+	public BufferedReader getReader() throws IOException {
+		return new BufferedReader(new InputStreamReader(getInputStream()));
+	}
+}

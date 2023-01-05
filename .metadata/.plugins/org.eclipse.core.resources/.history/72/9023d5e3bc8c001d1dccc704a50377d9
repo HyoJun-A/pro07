@@ -1,0 +1,5 @@
+package kr.go.unikr.model;
+
+public interface CardDAO {
+	public void cardAdd(CardDTO dto) throws Exception;
+}

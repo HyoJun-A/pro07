@@ -1,0 +1,17 @@
+package kr.go.unikr.DTO;
+
+import lombok.Data;
+
+@Data
+public class CardDTO {
+	private int cno;
+	private String title;
+	private String image;
+	private String regdate;
+	private int visited;
+	/*
+	 * cno int primary key auto_increment comment 'PK', title varchar(100) not null
+	 * comment '카드뉴스 제목', image varchar(500) not null comment '이미지 경로', regdate
+	 * datetime default now() comment '작성일', visited int default 0 comment '조회수'
+	 */
+}
