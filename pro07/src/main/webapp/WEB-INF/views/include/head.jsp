@@ -21,6 +21,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+<!-- Google font -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <style>
 	footer { background-image: url("${path1 }/resources/img/wrap_bg1.jpg");}
 	.tc { margin-bottom: 50px; border-bottom: 1px solid #000000;}

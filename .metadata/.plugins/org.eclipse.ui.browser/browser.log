@@ -34,3 +34,4 @@
 1월 05, 2023 17:24:31.44 [11176:10068:0105/172431.441:ERROR:interface_endpoint_client.cc(694)] Message 0 rejected by interface blink.mojom.WidgetHost
 1월 05, 2023 18:03:40.65 [11176:10068:0105/180340.650:ERROR:interface_endpoint_client.cc(694)] Message 5 rejected by interface blink.mojom.WidgetHost
 1월 05, 2023 18:12:08.44 [11176:10068:0105/181208.449:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost
+1월 05, 2023 18:15:10.33 [11176:10068:0105/181510.330:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost

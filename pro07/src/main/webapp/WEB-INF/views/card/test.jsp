@@ -11,9 +11,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
 	<title>미정</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<jsp:include page="../include/head.jsp" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
 </head>
 <body>
 	<div class="wrap">
@@ -22,29 +23,11 @@
 		<div class="container">
 			<div class="container">
             <!-- Breadcrumbs -->
-            <nav>
-                <div class="nav-wrapper cyan">
-                    <div class="col s12">
-                        <a href="/" class="breadcrumb" style="padding-left:20px">홈</a>
-                        <a href="" class="breadcrumb">파일관리</a>
-                        <span class="breadcrumb">파일 업로드</span>
-                    </div>
-                </div>
-            </nav>
-            <!-- end of Breadcrumbs -->
 
 
             <!-- Forms -->
             <div class="row">
-                <h4 class="center-align">파일 업로드</h4>
-                <hr style="margin-bottom: 50px;">
-
                 <form class="col s12 l6 offset-l3" action="${path1 }/card/upload.do" method="post" enctype="multipart/form-data">
-                                        
-<!--                     <div class="row">
-                    	<button type="button" class="btn-small waves-effect waves-light" id="btnAddFile">파일 추가</button>
-                    </div> -->
-                    
                     <div class="row" id="fileContainer">
                         <div class="file-field input-field col s12">
                             <div class="btn">
@@ -74,17 +57,9 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <blockquote>
-                            [파일 업로드] 버튼을 눌러서 새 파일을 업로드해 보세요.<br>
-                            새 파일을 업로드 하지 않고 파일 목록으로 가시려면 [파일 목록] 버튼을 누르세요.
-                        </blockquote>
-                    </div>
                 </form>
             </div>
 		</div>
-		<jsp:include page="../include/footer.jsp" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         const sideNav = document.querySelector('.sidenav');
